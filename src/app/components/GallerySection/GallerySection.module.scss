@@ -1,0 +1,138 @@
+@import "../../../scss/utils/mixin";
+
+.gallerySection {
+    background-image: linear-gradient(rgba(11, 29, 38, 0.4), rgba(11, 29, 38, 1));
+//     url("../../images/VG1x.png"),
+//     url("../../images/MG1x.png");
+//   background-repeat: no-repeat, no-repeat, no-repeat;
+//   background-size: 100%,  contain, contain;
+//   background-position: 0 0,  50% 141px, 0 0;
+  // padding-left: 40px;
+  // padding-right: 40px;
+//   background-color: #354147;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.2);
+}
+.wrapper {
+  @include mq(tablet) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+  }
+}
+
+.contentText {
+  padding-left: 60px;
+  color: #fbd784;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 42px;
+    height: 2px;
+    z-index: 10;
+    top: 10px;
+    left: 0;
+    background-color: #fbd784;
+  }
+  @include mq(tablet) {
+    font-size: 16px;
+    &::before {
+      width: 42px;
+    }
+  }
+  @include mq(desktop) {
+    padding-left: 90px;
+    font-size: 18px;
+    &::before {
+      width: 72px;
+    }
+  }
+}
+.textContainer {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  padding-top: 50px;
+  padding-left: 50px;
+  @include mq(tablet) {
+    padding-top: 80px;
+    padding-left: 80px;
+    // width: 600px;
+  }
+  @include mq(desktop) {
+    padding-top: 140px;
+    padding-left: 150px;
+    width: 600px;
+  }
+}
+.scrollText {
+  font-size: 120px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  left: 0;
+  top: 0;
+  @include mq(tablet) {
+    font-size: 160px;
+    font-weight: 700;
+  }
+  @include mq(desktop) {
+    font-size: 240px;
+  }
+}
+.heading {
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 27px;
+  @include mq(tablet) {
+    font-size: 64px;
+  }
+  @include mq(desktop) {
+    font-size: 64px;
+  }
+}
+.text {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 27px;
+  @include mq(tablet) {
+  }
+  @include mq(desktop) {
+    font-weight: 700;
+  }
+}
+.btn {
+  color: #fbd784;
+  background-color: transparent;
+  font-size: 18px;
+  border: none;
+  position: relative;
+  margin-top: 27px;
+  padding-right: 50px;
+  &::after {
+    content: url("../../images/arrow.svg");
+    position: absolute;
+    top: 4px;
+    right: 0;
+  }
+}
+
+.img {
+  object-fit: contain;
+  margin: 20px auto 0;
+
+  @include mq(tablet) {
+    margin-top: 0;
+    width: 308px;
+    height: 400px;
+  }
+  @include mq(desktop) {
+    width: 466px;
+    height: 650px;
+  }
+}
