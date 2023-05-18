@@ -28,13 +28,12 @@
 .listItem {
   visibility: hidden;
   @include mq(tablet) {
+    position: relative;
     visibility: visible;
     font-size: 18px;
     font-weight: 700;
     padding-left: 20px;
     padding-right: 20px;
-  }
-  @include mq(desktop) {
   }
 }
 .btnList {

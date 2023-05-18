@@ -2,13 +2,19 @@
 
 .heroSection {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding-top: 198px;
-  padding-bottom: 200px;
+  padding-top: 86px;
+
   @include mq(tablet) {
-    padding-bottom: 338px;
+    padding-top: 200px;
+    flex-wrap: nowrap;
   }
+  @include mq(desktop){
+    padding-bottom: 700px;
+  }
+ 
 }
 .accentText {
   position: relative;
@@ -17,6 +23,7 @@
   font-size: 14px;
   text-transform: uppercase;
   padding-left: 90px;
+  margin-top: 24px;
   &::before {
     position: absolute;
     top: 8px;
@@ -27,30 +34,43 @@
     background-color: #fbd784;
   }
   @include mq(tablet) {
+    margin-top: 0;
     font-size: 18px;
   }
 }
 .navLink {
-  align-items: center;
   display: flex;
-  flex-direction: column;
-  width: 100px;
+  @include mq(tablet){
+     align-items: center; 
+    flex-direction: column;
+  }
 }
-.navLinkText {
-  font-weight: 700;
-  font-size: 16px;
-  writing-mode: vertical-lr;
-  padding-bottom: 24px;
-  @include mq(tablet) {
-    font-size: 18px;
+.list{
+  display: flex;
+  @include mq(tablet){
+    display: block;
   }
 }
 .listItem {
-  &:not(:first-child) {
-    padding-top: 24px;
+  margin-left: 24px;
+@include mq(tablet){
+  margin-left: 0;
+  margin-top: 24px;
+}
+
+}
+.navLinkText {
+
+  font-weight: 700;
+  font-size: 16px;
+  @include mq(tablet) {
+    writing-mode: vertical-lr;
+    font-size: 18px;
   }
 }
+
 .link {
+  // scroll-behavior: smooth;
   fill: #fff;
   transition: all 300ms ease-in-out;
   &:hover,
@@ -63,14 +83,15 @@
 .heroTextContainer {
   display: flex;
   flex-direction: column;
+ 
   @include mq(tablet) {
-    width: 1000px;
+    margin-left: 40px;
   }
 }
 .heading {
-  font-size: 34px;
+  font-size: 18px;
   font-weight: 600;
-  margin: 32px 0;
+  margin-top: 32px;
   text-transform: capitalize;
   @include mq(tablet) {
     font-size: 60px;
@@ -81,10 +102,11 @@
 }
 .scroll {
   display: flex;
+  @include mq(tablet) { 
+  display: flex;
   flex-direction: column;
   align-items: flex-end;
   width: 100px;
-  @include mq(tablet) {
   }
 }
 
@@ -92,25 +114,45 @@
   font-size: 16px;
   font-weight: 700;
   position: relative;
-  padding-top: 40px;
+  padding-left: 20px;
+
   &::after {
     position: absolute;
     content: "";
-    width: 4px;
-    height: 60.7px;
+    width: 36px;
+    height: 4px;
     background-color: rgba(255, 255, 255, 0.5);
     top: 22px;
-    right: -22px;
+    right: 0;
     &:hover::after {
       background-color: rgba(255, 255, 255, 1);
     }
   }
   @include mq(tablet) {
+    padding-left: 0;
     font-size: 18px;
+    padding-top: 40px;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 4px;
+      height: 60.7px;
+      // background-color: rgba(255, 255, 255, 0.5);
+      top: 22px;
+      right: -22px;
+      // &:hover::after {
+      //   background-color: rgba(255, 255, 255, 1);
+      // }
+    }
   }
 }
 .scrollDown {
-  display: flex;
+  visibility: hidden;
+  @include mq(tablet){
+    margin-top: 32px;
+    visibility: visible;
+     display: flex;
+  }
 }
 .icon {
   margin-left: 20px;

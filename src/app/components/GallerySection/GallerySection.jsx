@@ -1,14 +1,12 @@
 import Image from "next/image";
-import img1 from "../../images/01-1x.png";
-import img2 from "../../images/02-1x.png";
-import img3 from "../../images/03-1x.png";
+import { img1x1, img1x2, img2x1, img2x2, img3x1, img3x2 } from "./gallery";
+
 import styles from "./GallerySection.module.scss";
 const GallerySection = () => {
   return (
-    // <section className={`${"container"} ${styles.gallerySection}`}>
-    <section className={styles.gallerySection}>
+    <section className={`${"container"} ${styles.gallerySection}`}>
       <ul>
-        <li className={styles.wrapper}>
+        <li className={styles.listWrapper} id="01">
           <div className={styles.textContainer}>
             <p className={styles.scrollText}>01</p>
             <p className={styles.contentText}>Get Started</p>
@@ -23,16 +21,18 @@ const GallerySection = () => {
             </p>
             <button className={styles.btn}>read more</button>
           </div>
-
           <Image
             className={styles.img}
-            src={img1}
-            alt={"person walk, mountains"}
-            width={250}
-            height={300}
+            src={img1x1}
+            alt="person walk, mountains"
+            // layout="responsive"
+            sizes="(max-width: 320px) 300px,
+  (max-width: 769px) 350px,
+  (max-width: 1280px) 566px"
+            srcSet={`${img1x1} 1x, ${img1x2} 2x`}
           />
         </li>
-        <li className={styles.wrapper}>
+        <li className={styles.listWrapper} id="02">
           <div className={styles.textContainer}>
             <p className={styles.scrollText}>02</p>
             <p className={styles.contentText}>Hiking Essentials</p>
@@ -46,16 +46,18 @@ const GallerySection = () => {
             </p>
             <button className={styles.btn}>read more</button>
           </div>
-
           <Image
             className={styles.img}
-            src={img2}
-            alt={"looking to the mountains"}
-            width={250}
-            height={300}
+            src={img2x1}
+            alt="looking to the mountains"
+            // layout="responsive"
+            sizes="(max-width: 320px) 300px,
+  (max-width: 769px) 350px,
+  (max-width: 1280px) 566px"
+            srcSet={`${img2x1} 1x, ${img2x2} 2x`}
           />
         </li>
-        <li className={styles.wrapper}>
+        <li className={styles.listWrapper} id="03">
           <div className={styles.textContainer}>
             <p className={styles.scrollText}>03</p>
             <p className={styles.contentText}>where you go is the key</p>
@@ -71,10 +73,13 @@ const GallerySection = () => {
           </div>
           <Image
             className={styles.img}
-            src={img3}
-            alt={"compass, mountains"}
-            width={250}
-            height={300}
+            src={img2x1}
+            alt="compass, mountains"
+            // layout="responsive"
+            sizes="(max-width: 320px) 300px,
+  (max-width: 769px) 350px,
+  (max-width: 1280px) 566px"
+            srcSet={`${img2x1} 1x, ${img2x2} 2x`}
           />
         </li>
       </ul>

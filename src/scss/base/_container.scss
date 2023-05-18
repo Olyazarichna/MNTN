@@ -1,26 +1,35 @@
+@import "../../scss/utils/mixin";
 .container {
   width: 320px;
   height: auto;
   margin-right: auto;
   margin-left: auto;
   padding: 40px 20px;
-  // background-image: linear-gradient(rgba(11, 29, 38, 0.7), rgba(11, 29, 38, 1)) ;
-  background-image: linear-gradient(rgba(11, 29, 38, 0.4), rgba(11, 29, 38, 1)),
-    url("../../../src/app/images/VG1x.png"),
-    url("../../../src/app/images/MG1x.png"),
-    url("../../../src/app/images/HG1x.png");
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-  background-size: 100%, contain, contain, contain;
-  background-position: 0 0, 0 257px, 50% 141px, 0 0;
-
+  //  background-image: linear-gradient(rgba(11, 29, 38, .1), rgba(11, 29, 38, 1));
+  // background-image: linear-gradient(rgba(11, 29, 38, 0.4), rgba(11, 29, 38, 1)),
+  //   url("../../../src/app/images/VG1x.png"),
+  //   url("../../../src/app/images/MG1x.png"),
+  //   url("../../../src/app/images/HG1x.png");
+  // background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  // background-size: 100%, contain, contain, contain;
+  // background-position: 0 0, 0 257px, 50% 141px, 0 0;
+  // background-color: #354147;
+  // @media (min-device-pixel-ratio: 2),
+  //   (min-resolution: 192dpi),
+  //   (min-resolution: 2dppx) {
+  //     background-image: linear-gradient(rgba(11, 29, 38, 0.4), rgba(11, 29, 38, 1)),
+  //     url("../../../src/app/images/VG2x.png"),
+  //     url("../../../src/app/images/MG2x.png"),
+  //     url("../../../src/app/images/HG2x.png");
+  // }
   @include mq(tablet) {
     width: 768px;
-    background-position: 0 0, 0 361px, 50% 141px, 0 0;
+    // background-position: 0 0, 0 361px, 50% 141px, 0 0;
     padding: 64px 32px;
   }
   @include mq(desktop) {
     width: 1280px;
-    background-position:0 0, 0 868px, 50% 400px, 0 0;
-    padding: 64px 40px;
+    // background-position:0 0, 0 868px, 50% 400px, 0 0;
+    padding: 64px 40px 0;
   }
 }

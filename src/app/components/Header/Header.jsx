@@ -1,47 +1,41 @@
+import Link from 'next/link';
 import styles from "./Header.module.scss";
+
 
 const Header = () => {
   return (
     <header className={styles.header}>
-      <a
+      <Link
         href="/"
-        target="_blank"
-        rel="noreferrer noopener"
         className={styles.logo}
       >
         MNTN
-      </a>
+      </Link>
       <nav>
         <ul className={styles.list}>
           <li className={styles.listItem}>
-            <a
+            <Link
               href="/"
-              target="_blank"
-              rel="noreferrer noopener"
               className={styles.link}
             >
               Equipment
-            </a>
+            </Link>
           </li>
           <li className={styles.listItem}>
-            <a
+            <Link
               href="/"
-              target="_blank"
-              rel="noreferrer noopener"
               className={styles.link}
             >
               About us
-            </a>
+            </Link>
           </li>
           <li className={styles.listItem}>
-            <a
+            <Link
               href="/"
-              target="_blank"
-              rel="noreferrer noopener"
               className={styles.link}
             >
               Blog
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

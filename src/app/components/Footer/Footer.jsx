@@ -1,7 +1,9 @@
+import Link from 'next/link';
 import styles from "./Footer.module.scss";
+
 const Footer = () => {
   return (
-    <footer className={styles.footer}>
+    <footer className={`${'container'} ${styles.footer}`}>
       <div>
         <h3 className={styles.heading}>mntn</h3>
         <p className={styles.text}>
@@ -13,54 +15,44 @@ const Footer = () => {
           <h4 className={styles.title}>More on The Blog</h4>
           <ul className={styles.list}>
             <li className={styles.listItem}>
-              <a
+              <Link
                 className={styles.link}
                 href="/"
-                target="_blank"
-                rel="noreferrer noopener"
               >
                 About MNTN
-              </a>
+              </Link>
             </li>
             <li className={styles.listItem}>
-              <a
+              <Link
                 className={styles.link}
                 href="/"
-                target="_blank"
-                rel="noreferrer noopener"
               >
                 Contributors & Writers
-              </a>
+              </Link>
             </li>
             <li className={styles.listItem}>
               <a
                 className={styles.link}
                 href="/"
-                target="_blank"
-                rel="noreferrer noopener"
               >
                 Write For Us
               </a>
             </li>
             <li className={styles.listItem}>
-              <a
+              <Link
                 className={styles.link}
-                href="/"
-                target="_blank"
-                rel="noreferrer noopener"
+                href="/#contact"
               >
                 Contact Us
-              </a>
+              </Link>
             </li>
             <li className={styles.listItem}>
-              <a
+              <Link
                 className={styles.link}
                 href="/"
-                target="_blank"
-                rel="noreferrer noopener"
               >
                 Privacy Policy
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -68,34 +60,28 @@ const Footer = () => {
           <h4 className={styles.title}>More on MNTN</h4>
           <ul className={styles.list}>
             <li className={styles.listItem}>
-              <a
+              <Link
                 className={styles.link}
                 href="/"
-                target="_blank"
-                rel="noreferrer noopener"
               >
                 The Team
-              </a>
+              </Link>
             </li>
             <li className={styles.listItem}>
-              <a
+              <Link
                 className={styles.link}
                 href="/"
-                target="_blank"
-                rel="noreferrer noopener"
               >
                 Jobs
-              </a>
+              </Link>
             </li>
             <li className={styles.listItem}>
-              <a
+              <Link
                 className={styles.link}
                 href="/"
-                target="_blank"
-                rel="noreferrer noopener"
               >
                 Press
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
