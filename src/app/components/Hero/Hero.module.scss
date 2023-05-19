@@ -7,16 +7,67 @@
   justify-content: space-between;
   padding-top: 86px;
 
+  width: 320px;
+  margin: 0 auto;
+
   @include mq(tablet) {
     padding-top: 200px;
     flex-wrap: nowrap;
+    width: 768px;
   }
-  @include mq(desktop){
+  @include mq(desktop) {
+    width: 1280px; 
     padding-bottom: 700px;
   }
- 
 }
-.accentText {
+.navLink {
+  display: flex;
+  @include mq(tablet) {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.navLink_text {
+  font-weight: 700;
+  font-size: 16px;
+  @include mq(tablet) {
+    writing-mode: vertical-lr;
+    font-size: 18px;
+  }
+}
+.list {
+  display: flex;
+  @include mq(tablet) {
+    display: block;
+  }
+}
+.list_item {
+  margin-left: 24px;
+  @include mq(tablet) {
+    margin-left: 0;
+    margin-top: 24px;
+  }
+}
+.list_link {
+  // scroll-behavior: smooth;
+  fill: #fff;
+  transition: all 300ms ease-in-out;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    fill: #fbd784;
+    color: #fbd784;
+  }
+}
+.textContainer {
+  display: flex;
+  flex-direction: column;
+
+  @include mq(tablet) {
+    margin-left: 40px;
+  }
+}
+.accentTitle {
   position: relative;
   color: #fbd784;
   font-weight: 800;
@@ -38,56 +89,6 @@
     font-size: 18px;
   }
 }
-.navLink {
-  display: flex;
-  @include mq(tablet){
-     align-items: center; 
-    flex-direction: column;
-  }
-}
-.list{
-  display: flex;
-  @include mq(tablet){
-    display: block;
-  }
-}
-.listItem {
-  margin-left: 24px;
-@include mq(tablet){
-  margin-left: 0;
-  margin-top: 24px;
-}
-
-}
-.navLinkText {
-
-  font-weight: 700;
-  font-size: 16px;
-  @include mq(tablet) {
-    writing-mode: vertical-lr;
-    font-size: 18px;
-  }
-}
-
-.link {
-  // scroll-behavior: smooth;
-  fill: #fff;
-  transition: all 300ms ease-in-out;
-  &:hover,
-  &:focus {
-    cursor: pointer;
-    fill: #fbd784;
-    color: #fbd784;
-  }
-}
-.heroTextContainer {
-  display: flex;
-  flex-direction: column;
- 
-  @include mq(tablet) {
-    margin-left: 40px;
-  }
-}
 .heading {
   font-size: 18px;
   font-weight: 600;
@@ -100,17 +101,17 @@
     font-size: 88px;
   }
 }
-.scroll {
+.listScroll {
   display: flex;
-  @include mq(tablet) { 
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  width: 100px;
+  @include mq(tablet) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100px;
   }
 }
 
-.listScroll {
+.listScroll_item {
   font-size: 16px;
   font-weight: 700;
   position: relative;
@@ -148,16 +149,16 @@
 }
 .scrollDown {
   visibility: hidden;
-  @include mq(tablet){
+  @include mq(tablet) {
     margin-top: 32px;
     visibility: visible;
-     display: flex;
+    display: flex;
   }
 }
 .icon {
   margin-left: 20px;
 }
-.textScroll{
+.textScroll {
   font-weight: 700;
   font-size: 18px;
 }

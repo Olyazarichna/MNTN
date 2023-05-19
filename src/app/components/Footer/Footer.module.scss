@@ -1,19 +1,21 @@
 @import "../../../scss/utils/mixin";
 .footer {
-  // padding: 40px 20px;
   background-color: #0B1D26;
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
   @include mq(tablet) {
-    position: relative;
+    width: 768px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    // padding: 40px 32px;
   }
   @include mq(desktop) {
-    padding: 80px 40px 120px;
+    width: 1280px;
   }
 }
-.heading {
+.footer_heading {
   text-transform: uppercase;
   font-size: 22px;
   font-weight: 600;
@@ -21,7 +23,7 @@
     font-size: 32px;
   }
 }
-.text {
+.footer_text {
   font-size: 14px;
   font-weight: 500;
   margin-top: 24px;
@@ -34,22 +36,7 @@
     font-weight: 600;
   }
 }
-.textTerm {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 12px;
-  font-weight: 500;
-  margin-top: 40px;
-  @include mq(tablet) {
-    // position: absolute;
-    // bottom: 46px;
-    font-size: 14px;
-    margin-top: 20px;
-  }
-  @include mq(desktop) {
-    font-size: 18px;
-    // bottom: 126px;
-  }
-}
+
 .listWrapper {
   @include mq(tablet) {
     display: flex;
@@ -58,32 +45,6 @@
   }
   @include mq(desktop) {
     width: 466px;
-  }
-}
-.list {
-  margin-top: 20px;
-  @include mq(tablet) {
-    margin-top: 24px;
-  }
-}
-.listItem {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.7;
-  @include mq(tablet) {
-    font-size: 16px;
-  }
-  @include mq(desktop) {
-    font-size: 18px;
-    font-weight: 700;
-  }
-}
-.link {
-  transition: color 300ms ease-in-out;
-  &:hover,
-  &:focus {
-    color: #fbd784;
-    cursor: pointer;
   }
 }
 .title {
@@ -99,5 +60,52 @@
   @include mq(desktop) {
     // margin-top: 0;
     font-size: 24px;
+  }
+}
+
+.list {
+  margin-top: 20px;
+  @include mq(tablet) {
+    margin-top: 24px;
+  }
+}
+.list_item {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.7;
+  @include mq(tablet) {
+    font-size: 16px;
+  }
+  @include mq(desktop) {
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+.list_link {
+  transition: color 300ms ease-in-out;
+  &:hover,
+  &:focus {
+    color: #fbd784;
+    cursor: pointer;
+  }
+}
+
+.textTerm {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 40px;
+  @include mq(tablet) {
+    margin: 0;
+    // position: absolute;
+    // bottom: 46px;
+    font-size: 14px;
+    // margin-top: 20px;
+    display: flex;
+    align-items: flex-end;
+  }
+  @include mq(desktop) {
+    font-size: 18px;
+    // bottom: 126px;
   }
 }

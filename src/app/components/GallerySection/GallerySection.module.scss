@@ -2,8 +2,16 @@
 
 .gallerySection {
   background-color: #0b1d26;
+  width: 320px;
+  margin: 0 auto;
+  @include mq(tablet) {
+    width: 768px;
+  }
+  @include mq(desktop) {
+    width: 1280px;
+  }
 }
-.listWrapper {
+.list {
   @include mq(tablet) {
     display: flex;
     justify-content: space-between;
@@ -12,8 +20,41 @@
     }
   }
 }
-
-.contentText {
+.article {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  padding-top: 50px;
+  padding-left: 50px;
+  @include mq(tablet) {
+    padding-top: 80px;
+    padding-left: 80px;
+    width: 400px;
+  }
+  @include mq(desktop) {
+    padding-top: 140px;
+    padding-left: 150px;
+    width: 600px;
+  }
+}
+.article_background {
+  font-size: 120px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  left: 0;
+  top: 0;
+  @include mq(tablet) {
+    font-size: 160px;
+    font-weight: 700;
+  }
+  @include mq(desktop) {
+    font-size: 240px;
+  }
+}
+.article_text {
   padding-left: 60px;
   color: #fbd784;
   font-size: 18px;
@@ -44,41 +85,7 @@
     }
   }
 }
-.textContainer {
-  width: 250px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  position: relative;
-  padding-top: 50px;
-  padding-left: 50px;
-  @include mq(tablet) {
-    padding-top: 80px;
-    padding-left: 80px;
-    width: 400px;
-  }
-  @include mq(desktop) {
-    padding-top: 140px;
-    padding-left: 150px;
-    width: 600px;
-  }
-}
-.scrollText {
-  font-size: 120px;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.1);
-  position: absolute;
-  left: 0;
-  top: 0;
-  @include mq(tablet) {
-    font-size: 160px;
-    font-weight: 700;
-  }
-  @include mq(desktop) {
-    font-size: 240px;
-  }
-}
-.heading {
+.article_heading {
   font-size: 36px;
   font-weight: 600;
   margin-top: 27px;
@@ -89,7 +96,7 @@
     font-size: 64px;
   }
 }
-.text {
+.article_mainContent {
   font-size: 18px;
   font-weight: 500;
   margin-top: 27px;
@@ -101,7 +108,7 @@
     margin-right: 0;
   }
 }
-.btn {
+.article_btn {
   color: #fbd784;
   background-color: transparent;
   font-size: 18px;
@@ -109,14 +116,22 @@
   position: relative;
   margin-top: 27px;
   padding-right: 50px;
+  transition: all 300ms ease-in-out;
+
   &::after {
     content: url("../../images/arrow.svg");
     position: absolute;
     top: 4px;
     right: 0;
   }
+  &:hover,
+  &:focus,
+  &:hover::after {
+    cursor: pointer;
+    color: #fff;
+  }
 }
-.img {
+.article_img {
   display: block;
   object-fit: contain;
   margin-top: 20px;

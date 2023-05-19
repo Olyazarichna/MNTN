@@ -1,26 +1,30 @@
 @import "../../../scss/utils/mixin";
 
-.wrapper{
-    background-image: linear-gradient(rgba(11, 29, 38, 0), rgba(11, 29, 38, 1)),
-    url("../../images/VG1x.png"),
-    url("../../images/MG1x.png"),
+.wrapper {
+  width: 320px;
+  margin: 0 auto;
+  background-image: linear-gradient(rgba(11, 29, 38, 0), rgba(11, 29, 38, 1)),
+    url("../../images/VG1x.png"), url("../../images/MG1x.png"),
     url("../../images/HG1x.png");
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   background-size: 100%, contain, contain, contain;
-  background-position: 0 0, 0 257px, 50% 141px, 0 0;
+  background-position: 0 0, 0 257px, 0 141px, 0 0;
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-      background-image: linear-gradient(rgba(11, 29, 38, 0), rgba(11, 29, 38, 1)),
-      url("../../images/VG2x.png"),
-      url("../../images/MG2x.png"),
+    background-image: linear-gradient(rgba(11, 29, 38, 0), rgba(11, 29, 38, 1)),
+      url("../../images/VG2x.png"), url("../../images/MG2x.png"),
       url("../../images/HG2x.png");
   }
   @include mq(tablet) {
-    background-position: 0 0, 0 361px, 50% 141px, 0 0;
+    width: 768px;
+    background-size: 100%, cover, cover, cover;
+    background-position: 0 0, 0 361px, 0 141px, 0 0;
+    // background-position: 0 0, 0 473px, 50% 141px, 0 0;
   }
   @include mq(desktop) {
-    // max-width: 1280px;
-    background-position:0 0, 0 868px, 50% 500px, 0 0;
+    width: 1280px;
+    background-size: 100%, contain, contain, contain;
+    background-position: 0 0, 0 868px, 0 500px, 0 0;
   }
 }

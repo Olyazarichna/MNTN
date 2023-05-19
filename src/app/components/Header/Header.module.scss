@@ -1,20 +1,29 @@
 @import "../../../scss/utils/mixin";
 
 .header {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 40px;
+  @include mq(tablet){
+    width: 768px;
+    padding-top: 64px;
+  }
+  @include mq(desktop){
+    width: 1280px; 
+  }
 }
 .logo {
   color: #fff;
   font-size: 20px;
   font-weight: 700;
-  cursor: pointer;
   transition: all 300ms ease-in-out;
   &:hover,
   &:focus {
+    cursor: pointer;
     transform: scale(1.1);
     color: #fbd784;
   }
@@ -49,7 +58,7 @@
     height: 2px;
     background-color: #fbd784;
     transform: translateY(100%) scaleX(0);
-    transition: transform 200ms linear;
+    transition: transform 300ms linear;
   }
   &:hover::after,
   &:focus::after {
