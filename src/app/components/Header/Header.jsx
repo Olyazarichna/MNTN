@@ -3,7 +3,7 @@ import styles from "./Header.module.scss";
 
 const Header = () => {
   return (
-    <header className={styles.header}>
+    <header className={`${'container'} ${styles.header}`}>
       <Link
         href="/"
         className={styles.logo}
