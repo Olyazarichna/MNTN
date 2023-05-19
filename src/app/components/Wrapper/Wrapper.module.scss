@@ -20,7 +20,6 @@
     width: 768px;
     background-size: 100%, cover, cover, cover;
     background-position: 0 0, 0 361px, 0 141px, 0 0;
-    // background-position: 0 0, 0 473px, 50% 141px, 0 0;
   }
   @include mq(desktop) {
     width: 1280px;
