@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import styles from "./Header.module.scss";
 
-
 const Header = () => {
   return (
     <header className={styles.header}>
@@ -12,27 +11,27 @@ const Header = () => {
         MNTN
       </Link>
       <nav>
-        <ul className={styles.list}>
-          <li className={styles.listItem}>
+        <ul className={styles.nav}>
+          <li className={styles.nav_item}>
             <Link
               href="/"
-              className={styles.link}
+              className={styles.nav_link}
             >
               Equipment
             </Link>
           </li>
-          <li className={styles.listItem}>
+          <li className={styles.nav_item}>
             <Link
               href="/"
-              className={styles.link}
+              className={styles.nav_link}
             >
               About us
             </Link>
           </li>
-          <li className={styles.listItem}>
+          <li className={styles.nav_item}>
             <Link
               href="/"
-              className={styles.link}
+              className={styles.nav_link}
             >
               Blog
             </Link>
@@ -47,9 +46,9 @@ const Header = () => {
             clipRule="evenodd"
           />
         </svg>
-        <span className={styles.btnText}>Account</span>
+        <span className={styles.btn_text}>Account</span>
       </button>
-      <button className={styles.btnList}>
+      <button className={styles.btn_menu}>
         <svg viewBox="0 0 100 80" width="20" height="20">
           <rect width="100" height="15"></rect>
           <rect y="30" width="100" height="15"></rect>

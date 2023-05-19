@@ -1,9 +1,11 @@
 @import "../../../scss/utils/mixin";
 
 .header {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .logo {
   color: #fff;
@@ -21,11 +23,11 @@
     font-weight: 700;
   }
 }
-.list {
+.nav {
   display: flex;
   color: #fff;
 }
-.listItem {
+.nav_item{
   visibility: hidden;
   @include mq(tablet) {
     position: relative;
@@ -36,23 +38,7 @@
     padding-right: 20px;
   }
 }
-.btnList {
-  background-color: transparent;
-  border-color: transparent;
-  fill: #fff;
-  position: absolute;
-  top: 70px;
-  right: 30px;
-  &:hover,
-  &:focus {
-    cursor: pointer;
-    fill: #fbd784;
-  }
-  @include mq(tablet) {
-    visibility: hidden;
-  }
-}
-.link {
+.nav_link {
   display: inline-flex;
   &::after {
     content: "";
@@ -72,6 +58,7 @@
   }
 }
 .btn {
+  padding: 0;
   border: transparent;
   display: inline-flex;
   background-color: transparent;
@@ -88,6 +75,22 @@
     fill: #fbd784;
   }
 }
-.btnText {
+.btn_text {
   padding-left: 5px;
+}
+.btn_menu {
+  background-color: transparent;
+  border-color: transparent;
+  fill: #fff;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    fill: #fbd784;
+  }
+  @include mq(tablet) {
+    visibility: hidden;
+  }
 }

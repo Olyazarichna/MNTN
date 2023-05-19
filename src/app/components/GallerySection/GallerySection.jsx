@@ -73,13 +73,13 @@ const GallerySection = () => {
           </div>
           <Image
             className={styles.img}
-            src={img2x1}
+            src={img3x1}
             alt="compass, mountains"
             // layout="responsive"
             sizes="(max-width: 320px) 300px,
   (max-width: 769px) 350px,
   (max-width: 1280px) 566px"
-            srcSet={`${img2x1} 1x, ${img2x2} 2x`}
+            srcSet={`${img3x1} 1x, ${img3x2} 2x`}
           />
         </li>
       </ul>
