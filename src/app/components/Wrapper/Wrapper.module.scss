@@ -1,8 +1,8 @@
 @import "../../../scss/utils/mixin";
 
 .wrapper {
-  width: 320px;
-  margin: 0 auto;
+  // width: 320px;
+  // margin: 0 auto;
   background-image: linear-gradient(rgba(11, 29, 38, 0), rgba(11, 29, 38, 1)),
     url("../../images/VG1x.png"), url("../../images/MG1x.png"),
     url("../../images/HG1x.png");
@@ -17,12 +17,12 @@
       url("../../images/HG2x.png");
   }
   @include mq(tablet) {
-    width: 768px;
+    // width: 768px;
     background-size: 100%, cover, cover, cover;
     background-position: 0 0, 0 361px, 0 141px, 0 0;
   }
   @include mq(desktop) {
-    width: 1280px;
+    // width: 1280px;
     background-size: 100%, contain, contain, contain;
     background-position: 0 0, 0 868px, 0 500px, 0 0;
   }

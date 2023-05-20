@@ -1,18 +1,12 @@
 @import "../../../scss/utils/mixin";
 .footer {
   background-color: #0b1d26;
-  // width: 320px;
-  margin: 0 auto;
   padding-top: 40px;
   padding-bottom: 40px;
   @include mq(tablet) {
-    // width: 768px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-  }
-  @include mq(desktop) {
-    // width: 1280px;
   }
 }
 .footer_heading {
