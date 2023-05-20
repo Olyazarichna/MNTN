@@ -47,7 +47,7 @@ const Hero = () => {
       </div>
         <ul className={styles.listScroll}>
         <li className={styles.listScroll_item}>
-            <Link href='/' >Start</Link>
+            <Link href='/'>Start</Link>
           </li>
           <li className={styles.listScroll_item}>
             <Link href='/#01'>01</Link>

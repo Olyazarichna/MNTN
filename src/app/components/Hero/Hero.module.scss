@@ -6,17 +6,12 @@
   align-items: center;
   justify-content: space-between;
   padding-top: 86px;
-
-  width: 320px;
-  margin: 0 auto;
-
   @include mq(tablet) {
     padding-top: 200px;
     flex-wrap: nowrap;
-    width: 768px;
+    padding-bottom: 200px;
   }
   @include mq(desktop) {
-    width: 1280px; 
     padding-bottom: 700px;
   }
 }
@@ -49,7 +44,6 @@
   }
 }
 .list_link {
-  // scroll-behavior: smooth;
   fill: #fff;
   transition: all 300ms ease-in-out;
   &:hover,
@@ -65,6 +59,9 @@
 
   @include mq(tablet) {
     margin-left: 40px;
+  }
+  @include mq(desktop) {
+    width: 950px;
   }
 }
 .accentTitle {
@@ -107,7 +104,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    width: 100px;
   }
 }
 
@@ -116,7 +112,6 @@
   font-weight: 700;
   position: relative;
   padding-left: 20px;
-
   &::after {
     position: absolute;
     content: "";
@@ -138,12 +133,8 @@
       content: "";
       width: 4px;
       height: 60.7px;
-      // background-color: rgba(255, 255, 255, 0.5);
       top: 22px;
       right: -22px;
-      // &:hover::after {
-      //   background-color: rgba(255, 255, 255, 1);
-      // }
     }
   }
 }

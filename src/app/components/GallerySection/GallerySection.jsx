@@ -5,8 +5,8 @@ import styles from "./GallerySection.module.scss";
 const GallerySection = () => {
   return (
     <section className={`${"container"} ${styles.gallerySection}`}>
-      <ul>
-        <li className={styles.list} id="01">
+      <ul className={styles.list}>
+        <li className={styles.list_item} id="01">
           <article className={styles.article}>
             <p className={styles.article_background}>01</p>
             <p className={styles.article_text}>Get Started</p>
@@ -34,7 +34,7 @@ const GallerySection = () => {
             srcSet={`${img1x1} 1x, ${img1x2} 2x`}
           />
         </li>
-        <li className={styles.list} id="02">
+        <li className={styles.list_item} id="02">
           <article className={styles.article}>
             <p className={styles.article_background}>02</p>
             <p className={styles.article_text}>Hiking Essentials</p>
@@ -61,7 +61,7 @@ const GallerySection = () => {
             srcSet={`${img2x1} 1x, ${img2x2} 2x`}
           />
         </li>
-        <li className={styles.list} id="03">
+        <li className={styles.list_item} id="03">
           <article className={styles.article}>
             <p className={styles.article_background}>03</p>
             <p className={styles.article_text}>where you go is the key</p>
