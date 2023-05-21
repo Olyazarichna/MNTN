@@ -1,43 +1,26 @@
-import Link from 'next/link';
+"use client";
+
+import Link from "next/link";
 import styles from "./Header.module.scss";
+import { useState } from "react";
+import NavBar from "../NavBar/NavBar";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen((isOpen) => !isOpen);
+  };
+
   return (
     <header className={styles.header}>
-      <Link
-        href="/"
-        className={styles.logo}
-      >
+      <Link href="/" className={styles.logo}>
         MNTN
       </Link>
-      <nav>
-        <ul className={styles.nav}>
-          <li className={styles.nav_item}>
-            <Link
-              href="/"
-              className={styles.nav_link}
-            >
-              Equipment
-            </Link>
-          </li>
-          <li className={styles.nav_item}>
-            <Link
-              href="/"
-              className={styles.nav_link}
-            >
-              About us
-            </Link>
-          </li>
-          <li className={styles.nav_item}>
-            <Link
-              href="/"
-              className={styles.nav_link}
-            >
-              Blog
-            </Link>
-          </li>
-        </ul>
-      </nav>
+      <div className={styles.navWrapper}>
+        <NavBar />
+      </div>
+
       <button className={styles.btn}>
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
           <path
@@ -48,13 +31,18 @@ const Header = () => {
         </svg>
         <span className={styles.btn_text}>Account</span>
       </button>
-      <button className={styles.btn_menu}>
+      <button className={styles.btn_menu} onClick={toggleMenu}>
         <svg viewBox="0 0 100 80" width="20" height="20">
           <rect width="100" height="15"></rect>
           <rect y="30" width="100" height="15"></rect>
           <rect y="60" width="100" height="15"></rect>
         </svg>
       </button>
+      {!isOpen && (
+        <div className={styles.navigation}>
+          <NavBar className={styles.navVisible} />
+        </div>
+      )}
     </header>
   );
 };
