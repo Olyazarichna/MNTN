@@ -1,8 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## A Hiking Guide
 
-## Getting Started
+This is a page for "A Hiking Guide" that provides information and tips on hiking in the mountains. This guide is created to assist both beginners and experienced hikers in planning and preparing for hikes.
 
-First, run the development server:
+## Usage
+
+To use the "A Hiking Guide" page, simply scroll down and browse through the sections that interest you. Click on the links in the menu to quickly jump to a specific section.
+
+## Technologies
+
+The "A Hiking Guide" page is implemented using the following technologies and tools:
+
+Next.js: A React framework for building server-rendered React applications and static websites.
+React: A JavaScript library for building user interfaces.
+SCSS: Used for styling and formatting the page.
+JavaScript: Used for adding interactivity and handling events.
+
+## Making Changes
+
+If you wish to make changes to the "A Hiking Guide" page, you will need the following:
+
+Clone the Repository: Clone the repository to your local machine.
+
+bash
+Copy code
+
+### git clone https://github.com/Olyazarichna/mntn.git
+
+Install Dependencies: Make sure you have all the necessary dependencies installed.
+
+Copy code
+
+### npm install
+
+Run a Local Server: Start a local server to preview your changes.
+
+### npm start
+
+# or
 
 ```bash
 npm run dev
@@ -12,23 +46,7 @@ yarn dev
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+After installing and running the application, open [http://localhost:3000](http://localhost:3000) with your browser to see the result.###
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Conclusion
+For more information write me olya.zarichna@gmail.com
