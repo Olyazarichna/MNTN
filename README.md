@@ -48,5 +48,4 @@ pnpm dev
 
 After installing and running the application, open [http://localhost:3000](http://localhost:3000) with your browser to see the result.###
 
-Conclusion
 For more information write me olya.zarichna@gmail.com
