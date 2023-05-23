@@ -21,7 +21,6 @@ If you wish to make changes to the "A Hiking Guide" page, you will need the foll
 
 Clone the Repository: Clone the repository to your local machine.
 
-bash
 Copy code
 
 ### git clone https://github.com/Olyazarichna/mntn.git
@@ -39,7 +38,7 @@ Run a Local Server: Start a local server to preview your changes.
 # or
 
 ```bash
-npm run dev
+### npm run dev
 # or
 yarn dev
 # or
