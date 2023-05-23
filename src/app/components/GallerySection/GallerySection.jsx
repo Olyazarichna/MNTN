@@ -2,6 +2,7 @@ import Image from "next/image";
 import { img1x1, img1x2, img2x1, img2x2, img3x1, img3x2 } from "./gallery";
 
 import styles from "./GallerySection.module.scss";
+
 const GallerySection = () => {
   return (
     <section className={`${"container"} ${styles.gallerySection}`}>
@@ -28,6 +29,7 @@ const GallerySection = () => {
             src={img1x1}
             alt="person walk, mountains"
             // layout="responsive"
+            priority={false}
             sizes="(max-width: 320px) 300px,
   (max-width: 768px) 350px,
   (max-width: 1280px) 566px"
@@ -54,6 +56,7 @@ const GallerySection = () => {
             className={styles.article_img}
             src={img2x1}
             alt="looking to the mountains"
+            priority={false}
             // layout="responsive"
             sizes="(max-width: 320px) 300px,
   (max-width: 768px) 350px,
@@ -81,6 +84,7 @@ const GallerySection = () => {
             className={styles.article_img}
             src={img3x1}
             alt="compass, mountains"
+            priority={false}
             // layout="responsive"
             sizes="(max-width: 320px) 300px,
   (max-width: 768px) 350px,

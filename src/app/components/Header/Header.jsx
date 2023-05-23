@@ -38,7 +38,7 @@ const Header = () => {
           <rect y="60" width="100" height="15"></rect>
         </svg>
       </button>
-      {!isOpen && (
+      {isOpen && (
         <div className={styles.navigation}>
           <NavBar className={styles.navVisible} />
         </div>

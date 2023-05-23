@@ -99,6 +99,7 @@
   }
 }
 .listScroll {
+  scroll-behavior: smooth;
   display: flex;
   @include mq(tablet) {
     display: flex;
@@ -108,10 +109,14 @@
 }
 
 .listScroll_item {
+ 
   font-size: 16px;
   font-weight: 700;
   position: relative;
   padding-left: 20px;
+  &:hover, &:focus{
+    color: #fbd784;
+  }
   &::after {
     position: absolute;
     content: "";
@@ -120,10 +125,9 @@
     background-color: rgba(255, 255, 255, 0.5);
     top: 22px;
     right: 0;
-    &:hover::after {
+  } &:hover::after,&:focus::after {
       background-color: rgba(255, 255, 255, 1);
     }
-  }
   @include mq(tablet) {
     padding-left: 0;
     font-size: 18px;
