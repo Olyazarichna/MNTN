@@ -91,15 +91,11 @@
   margin-top: 40px;
   @include mq(tablet) {
     margin: 0;
-    // position: absolute;
-    // bottom: 46px;
     font-size: 14px;
-    // margin-top: 20px;
     display: flex;
     align-items: flex-end;
   }
   @include mq(desktop) {
     font-size: 18px;
-    // bottom: 126px;
   }
 }
