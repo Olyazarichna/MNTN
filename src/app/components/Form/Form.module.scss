@@ -1,0 +1,42 @@
+@import '../../../scss/utils/mixin';
+
+.form{
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+}
+.form_wrapper{
+    position: relative;
+}
+.form_label{
+    position: absolute;
+    top:26px;
+    left:5px;
+    transition: all 0.2s ease-out;
+    font-size: 14px; 
+     font-weight: 600;
+    @include mq(tablet) {
+      font-size: 16px;
+    }
+}
+.form_input{
+    margin-top: 20px;
+    width: 100%;
+    padding: 5px;
+
+}
+.focused {
+    transition: all 0.3s ease-out;
+    transform: translateY(-26px);
+  }
+.form_btn{
+    margin-top: 20px;
+    border-color: transparent;
+    background-color: #fbd784;
+    border-radius: 4px;
+    font-weight: 600;
+    color: #fff;
+    &:hover,&:focus{
+        cursor: pointer;
+    }
+}

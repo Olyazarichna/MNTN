@@ -1,9 +1,21 @@
+'use client';
 import Link from 'next/link';
 import styles from "./Footer.module.scss";
-
+import { useState } from 'react';
+import Backdrop from '../Backdrop/Backdrop';
+import Modal from '../Modal/Modal';
 const Footer = () => {
+  const [isModalOpen, setIsModalOpen]= useState(false);
+
+  const openModal=()=>{
+    setIsModalOpen(true);
+  }
+  const closeModal=()=>{
+    setIsModalOpen(false);
+  }
   return (
-    <footer className={`${'container'} ${styles.footer}`}>
+    <>
+     <footer className={`${'container'} ${styles.footer}`}>
       <div>
         <h3 className={styles.footer_heading}>mntn</h3>
         <p className={styles.footer_text}>
@@ -41,6 +53,7 @@ const Footer = () => {
             <li className={styles.list_item}>
               <Link
                 className={styles.list_link}
+                onClick={openModal}
                 href="/#contact"
               >
                 Contact Us
@@ -90,6 +103,12 @@ const Footer = () => {
         Copyright 2023 MNTN, Inc. Terms & Privacy
       </p>
     </footer>
+    {isModalOpen &&(<Backdrop><Modal onClick={closeModal}/></Backdrop>)
+      
+
+    }
+    </>
+   
   );
 };
 
