@@ -1,0 +1,61 @@
+@import "../../../scss/utils/mixin";
+
+.blogSection {
+  @include mq(tablet) {
+    margin-top: 20px;
+  }
+}
+.blogSection_text {
+  font-weight: 500;
+  @include mq(tablet) {
+    font-size: 16px;
+  }
+}
+.blogSection_list {
+  margin-top: 10px;
+  text-align: center;
+  @include mq(tablet) {
+    margin-top: 20px;
+    display: grid;
+    justify-content: center;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, 300px);
+  }
+}
+.blogSection_btn {
+  padding: 0;
+  margin: 0;
+  border: none;
+  transition: all 300ms ease-in-out;
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 5px rgba(253, 253, 253, 0.8);
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+}
+.article_container {
+  height: 300px;
+  overflow: scroll;
+  margin: 20px;
+}
+.article_list {
+  margin-top: 20px;
+}
+.article_listItem {
+  @include mq(tablet) {
+    display: flex;
+
+    &:nth-child(odd) {
+      flex-direction: row-reverse;
+    }
+  }
+}
+.article_listText {
+  margin-top: 20px;
+}
+.article_listImg {
+  @include mq(tablet) {
+    width: 350px;
+  }
+}

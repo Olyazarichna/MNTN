@@ -57,7 +57,6 @@ const GallerySection = () => {
             src={img2x1}
             alt="looking to the mountains"
             priority={false}
-            // layout="responsive"
             sizes="(max-width: 320px) 300px,
   (max-width: 768px) 350px,
   (max-width: 1280px) 566px"
@@ -85,7 +84,6 @@ const GallerySection = () => {
             src={img3x1}
             alt="compass, mountains"
             priority={false}
-            // layout="responsive"
             sizes="(max-width: 320px) 300px,
   (max-width: 768px) 350px,
   (max-width: 1280px) 566px"

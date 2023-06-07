@@ -1,0 +1,35 @@
+.lightboxBtn {
+  background-color: transparent;
+  border: transparent;
+  z-index: 100;
+}
+.btnRL {
+  fill: rgba(255, 255, 255, 1);
+  transition: fill 300ms ease-out;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    fill: rgba(255, 255, 255, 0.5);
+  }
+}
+.closeBtn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  top: 4px;
+  right: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  border-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease-out;
+  z-index: 20;
+  &:hover {
+    background-color: var(--accent-cl-active);
+  }
+}
+.box{
+  background-color: rgba(0,0,0,0.7);
+}

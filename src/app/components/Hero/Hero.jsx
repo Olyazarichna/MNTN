@@ -3,7 +3,7 @@ import styles from "./Hero.module.scss";
 
 const Hero = () => {
   return (
-    <section className={styles.heroSection}>
+     <section className={`${'container'} ${styles.heroSection}`}> 
       <div className={styles.navLink}>
         <p className={styles.navLink_text} id="contact">
           Follow us

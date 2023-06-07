@@ -2,7 +2,6 @@ import Link from 'next/link';
 import styles from './NavBar.module.scss';
 
 const NavBar=()=>{
-
     return(
         <nav> 
         <ul className={styles.nav}>
@@ -24,7 +23,7 @@ const NavBar=()=>{
           </li>
           <li className={styles.nav_item}>
             <Link
-              href="/"
+              href="/blog"
               className={styles.nav_link}
             >
               Blog

@@ -20,8 +20,6 @@
 }
 .article {
   width: 250px;
-  display: flex;
-  flex-direction: column;
   position: relative;
   margin-top: 50px;
   @include mq(tablet) {
