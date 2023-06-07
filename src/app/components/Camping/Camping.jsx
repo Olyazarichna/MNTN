@@ -81,11 +81,10 @@ const Camping = () => {
               </div>
 
               <Image
-                className={styles.article_listImg}
                 src={article.image}
-                width="auto"
+                width={500}
                 height="auto"
-                alt="camping"
+                alt={article.title}
                 loading="lazy"
               />
             </li>

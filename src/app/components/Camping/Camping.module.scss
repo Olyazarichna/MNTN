@@ -55,8 +55,4 @@
 .article_listText {
   margin-top: 20px;
 }
-.article_listImg {
-  @include mq(tablet) {
-    width: 350px;
-  }
-}
+
