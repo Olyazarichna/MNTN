@@ -6,6 +6,7 @@
   }
 }
 .blogSection_text {
+    margin-top: 20px;
   font-weight: 500;
   @include mq(tablet) {
     font-size: 16px;
@@ -14,8 +15,8 @@
 .blogSection_list {
   margin-top: 10px;
   text-align: center;
+   margin-top: 20px;
   @include mq(tablet) {
-    margin-top: 20px;
     display: grid;
     justify-content: center;
     grid-gap: 10px;
