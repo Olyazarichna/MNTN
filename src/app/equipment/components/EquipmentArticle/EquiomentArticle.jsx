@@ -12,7 +12,7 @@ const EquipmentArticle = () => {
   return (
     <section className={`${"container"} ${styles.equipmentSection}`}>
       <p className={styles.mainInfo}>
-        Whether you’re casually hiking to a favorite waterfall or bagging a
+        Whether you&rsquo;re casually hiking to a favorite waterfall or bagging a
         difficult summit, carrying the proper equipment is absolutely critical.
         When things go wrong, as they often do, this can mean the difference
         between a minor inconvenience and a dire result. For first-timers and
@@ -59,10 +59,10 @@ const EquipmentArticle = () => {
             <p>
               1. NAVIGATION - A topo map and trusty compass are two navigation
               components that should accompany you on any trip into the
-              backcountry. They’re reliable, lightweight, durable, and
+              backcountry. They&rsquo;re reliable, lightweight, durable, and
               guaranteed to never run out of batteries. They can keep you from
-              getting lost or help you find your way again, but they won’t do
-              any good if you don’t know how to use them. So brush up on how to
+              getting lost or help you find your way again, but they won&rsquo;t do
+              any good if you don&rsquo;t know how to use them. So brush up on how to
               use a map and compass and how to keep from getting lost before
               heading out on your next trip. We also recommend keeping your maps
               in a clear, waterproof map sack to keep them dry and protected.
@@ -92,7 +92,7 @@ const EquipmentArticle = () => {
               brimmed hat, and protective clothing should be considered
               essential on every hiking trip. Bad sunburns, bleeding cracked
               lips, and conditions like snow blindness can be debilitating if
-              proper respect isn't paid to the sun's power.
+              proper respect isn&rsquo;t paid to the sun&rsquo;s power.
             </p>
           </li>
 
@@ -101,10 +101,10 @@ const EquipmentArticle = () => {
               3. INSULATION - Weather can change quickly on any wilderness trip,
               so we always recommend bringing an extra insulation clothing layer
               - even on warm weather trips. A simple layerable, quick dry
-              clothing system will ensure you're safe and warm when temps drop.
+              clothing system will ensure you&rsquo;re safe and warm when temps drop.
               For example, we pack a down hooded jacket and rain protection on
               almost every hiking trip, regardless of the forecast. For your
-              clothing system, you’ll want to avoid cotton products, which take
+              clothing system, you&rsquo;ll want to avoid cotton products, which take
               a long time to dry and pull heat from your body. Instead, wear
               quick dry, synthetic layers and manage perspiration to keep your
               clothing from soaking with sweat. Wet clothing will quickly chill
@@ -138,11 +138,11 @@ const EquipmentArticle = () => {
           <li className={styles.contentListItem}>
             <p>
               4. ILLUMINATION - We bring a reliable headlamp on every hiking
-              trip, even if we're not planning on being out past dark. Sometimes
+              trip, even if we&rsquo;re not planning on being out past dark. Sometimes
               a hike will take longer than expected, and getting lost in the
               dark can quickly compound a bad situation. If you ever do find
               yourself unexpectedly in the backcountry as daylight is fading,
-              you'll be happy to have a headlamp to help you find the way home.
+              you&rsquo;ll be happy to have a headlamp to help you find the way home.
               We usually hike with our phones as well, and their built-in
               flashlights serve as a good backup light source. Make sure to test
               your headlamp batteries prior to your hike as well.
@@ -152,13 +152,13 @@ const EquipmentArticle = () => {
           <li className={styles.contentListItem}>
             <p>
               5. FIRST AID SUPPLIES - When traveling into the backcountry,
-              you’ll always want to carry a comprehensive first aid kit. Most
+              you&rsquo;ll always want to carry a comprehensive first aid kit. Most
               backpackers buy a pre-packaged first aid kit, which will provide a
               lightweight and reliable setup for minor ailments. As you gain
-              more trail experience you'll be able to add or subtract from your
+              more trail experience you&rsquo;ll be able to add or subtract from your
               first aid kit depending on your individual needs. And always make
               sure to replace anything you use as soon as you return home from
-              your trek. Check out these videos we made to see what's in our
+              your trek. Check out these videos we made to see what&rsquo;s in our
               first aid kit and learn some critical wilderness emergency first
               aid skills.
             </p>
@@ -172,7 +172,7 @@ const EquipmentArticle = () => {
               (one is kept in a dry place as a backup), a few stormproof
               matches, and a few small firestarter cubes. We only use the fire
               starters when we really need them, but they make fire building
-              much easier, especially in wet conditions. If you’re looking to go
+              much easier, especially in wet conditions. If you&rsquo;re looking to go
               more survivalist style, you can carry a small fire flint, but
               small lighters tend to work just fine for us. Additionally, some
               hikers make homemade fire starters, which are cheap and easy to
@@ -225,21 +225,21 @@ const EquipmentArticle = () => {
               pad punctures, tent fabric tears, sleeping bag rips, puffy coat
               holes, and stuff like that. Duct tape is a great all-around repair
               tool that can be used for things like splinting a broken tent pole
-              or repairing sunglasses, and it's even good for preventing
+              or repairing sunglasses, and it&rsquo;s even good for preventing
               blisters when you feel a hot spot on your foot.
             </p>
           </li>
 
           <li className={styles.contentListItem}>
             <p>
-              8. NUTRITION - When preparing for a hike, you’ll want to make sure
+              8. NUTRITION - When preparing for a hike, you&rsquo;ll want to make sure
               to bring along enough calories to sustain your energy for a long
               day of activity. We commonly snack on energy bars (Larabar, Clif
               Bar, ProBar, Luna, and Kind bars tend to be our favorites), dried
               fruits, nuts, and jerky while we hike. For a more substantial
               lunch, we like to pack tortillas or bagels and make sandwiches
               with hard meats (like salami) and cheeses (like parmesan). If
-              you’re headed out on a long hike, we recommend bringing some extra
+              you&rsquo;re headed out on a long hike, we recommend bringing some extra
               calorically-dense food, just in case your trip takes longer than
               expected. Check out our Backpacking Food Guide for a bunch more
               information and recommendations on our favorite trail grub.
@@ -247,9 +247,9 @@ const EquipmentArticle = () => {
           </li>
           <li className={styles.contentListItem}>
             <p>
-              9. HYDRATION - It's absolutely essential to stay well hydrated on
-              the trail to keep your body’s critical systems running properly.
-              Water helps cool you down when you’re hot, warm you up when you’re
+              9. HYDRATION - It&rsquo;s absolutely essential to stay well hydrated on
+              the trail to keep your body&rsquo;s critical systems running properly.
+              Water helps cool you down when you&rsquo;re hot, warm you up when you&rsquo;re
               cold, and will keep your muscles and joints working properly to
               avoid injury while you hike. Make sure to bring enough water for
               the duration of your hike, or bring a lightweight water filter and
@@ -257,8 +257,8 @@ const EquipmentArticle = () => {
               24-hour water supply, one gallon (or 4 liters) is recommended per
               person. Make sure your water is easily accessible via water
               bottles or a hydration pack so you can drink freely while you
-              hike. Also, it’s important to remember that while water is
-              critically important, it’s also one of the heaviest things you’ll
+              hike. Also, it&rsquo;s important to remember that while water is
+              critically important, it&rsquo;s also one of the heaviest things you&rsquo;ll
               carry on the trail. So carrying a bunch of extra water should be
               avoided as well.
             </p>
@@ -266,8 +266,8 @@ const EquipmentArticle = () => {
 
           <li className={styles.contentListItem}>
             <p>
-              10. EMERGENCY SHELTER - If you’re on a multi-day backpacking trip,
-              you'll already have a shelter in your pack. But for day hiking
+              10. EMERGENCY SHELTER - If you&rsquo;re on a multi-day backpacking trip,
+              you&rsquo;ll already have a shelter in your pack. But for day hiking
               trips, we recommended bringing a small, lightweight emergency
               shelter, just in case you unexpectedly have to spend a night
               outside. Emergency blankets and bivys (we prefer the bivy) are
