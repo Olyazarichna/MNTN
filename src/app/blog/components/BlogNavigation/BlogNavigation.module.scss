@@ -1,0 +1,38 @@
+// @import "../../../../scss/utils/mixin";
+
+// .navBar {
+//   margin-top: 20px;
+//   margin-left: auto;
+//   display: flex;
+//   justify-content: center;
+// }
+// .navBar_list {
+//   position: absolute;
+//   display: flex;
+//   justify-content: center;
+//   flex-wrap: wrap;
+// }
+// .navBar_listItem {
+//   margin-top: 10px;
+//   &:not(:first-child) {
+//     margin-left: 10px;
+//   }
+//   @include mq(tablet) {
+//     margin-top: 0;
+//   }
+// }
+// .navBar_listItemBtn {
+//   background-color: transparent;
+//   padding: 6px;
+//   color: #fff;
+//   font-size: 17px;
+//   font-weight: 700;
+//   border: 1px solid #fbd784;
+//   border-radius: 4px;
+//   transition: color 300ms ease-in-out;
+//   &:hover,
+//   &:focus {
+//     cursor: pointer;
+//     color: #fbd784;
+//   }
+// }

@@ -1,4 +1,4 @@
-@import "../../../scss/utils/mixin";
+@import "../../../../scss/utils/mixin";
 
 .blogSection {
   @include mq(tablet) {
@@ -35,24 +35,3 @@
     cursor: pointer;
   }
 }
-.article_container {
-  height: 300px;
-  overflow: scroll;
-  margin: 20px;
-}
-.article_list {
-  margin-top: 20px;
-}
-.article_listItem {
-  @include mq(tablet) {
-    display: flex;
-
-    &:nth-child(odd) {
-      flex-direction: row-reverse;
-    }
-  }
-}
-.article_listText {
-  margin-top: 20px;
-}
-

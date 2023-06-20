@@ -68,14 +68,6 @@ const LightboxComponent = ({
         );
       }}
       className={styles.box}
-     
-
-    //   pageTransitionConfig={{
-    //     from: { transform: "scale(0.75)", opacity: 0 },
-    //     enter: { transform: "scale(1)", opacity: 1 },
-    //     leave: { transform: "scale(0.75)", opacity: 0 },
-    //     config: { mass: 1, tension: 320, friction: 32 }
-    //   }}
     />
   );
 };

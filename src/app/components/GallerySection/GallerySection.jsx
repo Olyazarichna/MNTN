@@ -28,7 +28,6 @@ const GallerySection = () => {
             className={styles.article_img}
             src={img1x1}
             alt="person walk, mountains"
-            // layout="responsive"
             priority={false}
             sizes="(max-width: 320px) 300px,
   (max-width: 768px) 350px,

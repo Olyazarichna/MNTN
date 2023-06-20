@@ -1,12 +1,11 @@
 "use client";
-import styles from "./Camping.module.scss";
+import styles from "./BlogInfo.module.scss";
 import Image from "next/image";
-import LightboxComponent from "../LightboxComponent/LightboxComponent";
-import data from "./articles";
+import LightboxComponent from "../../../components/LightboxComponent/LightboxComponent";
 import { images } from "./gallery";
 import { useState } from "react";
 
-const Camping = () => {
+const BlogInfo = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState(0);
 
@@ -70,29 +69,8 @@ const Camping = () => {
           />
         )}
       </div>
-
-      <ul className={styles.article_list}>
-        {data?.map((article, id) => {
-          return (
-            <li key={id} className={styles.article_listItem}>
-              <div className={styles.article_container}>
-                <h3>{article.title}</h3>
-                <p className={styles.article_listText}> {article.article}</p>
-              </div>
-
-              <Image
-                src={article.image}
-                width={500}
-                height="auto"
-                alt={article.title}
-                loading="lazy"
-              />
-            </li>
-          );
-        })}
-      </ul>
     </section>
   );
 };
 
-export default Camping;
+export default BlogInfo;

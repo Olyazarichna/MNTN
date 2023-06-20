@@ -1,0 +1,114 @@
+@import "../../../../scss/utils/mixin";
+.equipmentSection {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.gridWrapper {
+  margin-top: 40px;
+  @include mq(tablet) {
+    // margin-top: 0;
+    // margin-top: 40px;
+    // margin-bottom: 40px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 120px auto;
+    grid-template-areas:
+      "....... header header"
+      "sidebar content content";
+  }
+}
+
+.sidebar {
+  grid-area: sidebar;
+  //   margin-top: 40px;
+  @include mq(tablet) {
+    // margin-top: 0;
+  }
+}
+
+.sidebar_listItem {
+  margin-top: 10px;
+  &:hover {
+    cursor: pointer;
+    color: #fbd784;
+  }
+}
+.content {
+  grid-area: content;
+  margin-top: 40px;
+  @include mq(tablet) {
+    margin-top: 0;
+  }
+}
+.contentListItem {
+  &:not(:first-child) {
+    margin-top: 10px;
+  }
+}
+.contentList_img {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.imgList {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  @include mq(tablet) {
+    flex-wrap: nowrap;
+  }
+}
+.imgList_item {
+  &:not(:first-child) {
+    margin-top: 10px;
+  }
+
+  @include mq(tablet) {
+    &:not(:first-child) {
+      margin-top: 0;
+      margin-left: 10px;
+    }
+  }
+}
+.contentList_imgList{
+  height: 400px;
+}
+
+.mainInfo {
+  grid-area: header;
+}
+.quoteContainer {
+  margin-top: 80px;
+  text-align: center;
+  @include mq(tablet) {
+    font-size: 20px;
+  }
+}
+.quoteText {
+  font-style: italic;
+}
+.quoteAuthor {
+  position: relative;
+  &::before {
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: -28px;
+  }
+  &::after {
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    right: -28px;
+  }
+}

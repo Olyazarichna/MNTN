@@ -1,0 +1,23 @@
+@import "../../../../scss/utils/mixin";
+.equipmentSection {
+  margin-top: 150px;
+  background-image: url("../../../images/blog//lightboxImg/tent.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 535px) {
+    height: 500px;
+    background-size: cover;
+    background-position: 50% 95%;
+  }
+}
+.heading {
+  font-size: 14px;
+  @include mq(tablet) {
+    font-size: 30px;
+  }
+}

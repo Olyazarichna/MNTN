@@ -1,0 +1,24 @@
+@import '../../../scss/utils/mixin';
+
+.article_container {
+    height: 300px;
+    overflow: scroll;
+    margin: 20px;
+  }
+  .article_list {
+    margin-top: 20px;
+  }
+  .article_listItem {
+      margin-top: 20px;
+    @include mq(tablet) {
+      display: flex;
+  
+      &:nth-child(odd) {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+  .article_listText {
+    margin-top: 20px;
+  }
+  

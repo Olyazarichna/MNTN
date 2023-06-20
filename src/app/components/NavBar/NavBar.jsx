@@ -7,7 +7,7 @@ const NavBar=()=>{
         <ul className={styles.nav}>
           <li className={styles.nav_item}>
             <Link
-              href="/"
+              href="/equipment"
               className={styles.nav_link}
             >
               Equipment

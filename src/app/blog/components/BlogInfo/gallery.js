@@ -1,13 +1,12 @@
-import photo1 from '../../images/blog/lightboxImg/mom.jpg';
-import photo2 from '../../images/blog/lightboxImg/couple.jpg';
-import photo3 from '../../images/blog/lightboxImg/fire.jpg';
-import photo4 from '../../images/blog/lightboxImg/family.jpg';
-import photo5 from '../../images/blog/lightboxImg/hikingGroup.jpg';
-import photo6 from '../../images/blog/lightboxImg/hikingman.jpg';
-import photo7 from '../../images/blog/lightboxImg/mountains.jpg';
-import photo8 from '../../images/blog/lightboxImg/relax.jpg';
-import photo9 from '../../images/blog/lightboxImg/tent.jpg';
-import photo10 from '../../images/blog/lightboxImg/tentNight.jpg';
+import photo2 from '../../../images/blog/lightboxImg/couple.jpg';
+import photo1 from '../../../images/blog/lightboxImg/mom.jpg';
+import photo3 from '../../../images/blog/lightboxImg/fire.jpg';
+import photo4 from '../../../images/blog/lightboxImg/family.jpg';
+import photo5 from '../../../images/blog/lightboxImg/hikingGroup.jpg';
+import photo6 from '../../../images/blog/lightboxImg/hikingman.jpg';
+import photo7 from '../../../images/blog/lightboxImg/mountains.jpg';
+import photo8 from '../../../images/blog/lightboxImg/relax.jpg';
+import photo9 from '../../../images/blog/lightboxImg/tentNight.jpg';
 
 
 export const images = [
@@ -17,7 +16,6 @@ export const images = [
         alt: 'beauty',
         width: 500,
         height: 400,
-
     },
     {
         src: photo2.src,
@@ -70,13 +68,6 @@ export const images = [
     },
     {
         src: photo9.src,
-        loading: 'lazy',
-        alt: 'tent,  mountains',
-        width: 500,
-        height: 400,
-    },
-    {
-        src: photo10.src,
         loading: 'lazy',
         alt: 'tent, tentNight, mountains',
         width: 500,

@@ -1,0 +1,14 @@
+@import "../../../../scss/utils/mixin";
+.blogContainer {
+  height: 200px;
+  overflow: hidden;
+  margin-top: 150px;
+  background-image: url("../../../images/blog/hero2.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  @media screen and (min-width: 535px) {
+    height: 340px;
+    background-size: cover;
+    background-position: center;
+  }
+}

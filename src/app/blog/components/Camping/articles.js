@@ -1,9 +1,9 @@
-import happiness from '../../images/blog/happiness.jpg';
-import things from '../../images/blog/things.jpg';
-import girls from '../../images/blog/girls.jpg';
-import group from '../../images/blog/group.jpg';
+import happiness from '../../../images/blog/happiness.jpg';
+import things from '../../../images/blog/things.jpg';
+import girls from '../../../images/blog/girls.jpg';
+import group from '../../../images/blog/group.jpg';
 
-const data = [
+const campingArticles = [
     {
         "id": "12345",
         "title": "How to Choose Tents for Camping",
@@ -20,4 +20,4 @@ const data = [
 
 ]
 
-export default data;
+export default campingArticles;
