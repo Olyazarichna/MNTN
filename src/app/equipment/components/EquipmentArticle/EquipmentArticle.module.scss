@@ -3,12 +3,16 @@
   margin-top: 40px;
   margin-bottom: 40px;
 }
+.mainInfo {
+  grid-area: header;
+  @include mq(tablet) {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}
 .gridWrapper {
   margin-top: 40px;
   @include mq(tablet) {
-    // margin-top: 0;
-    // margin-top: 40px;
-    // margin-bottom: 40px;
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 120px auto;
@@ -20,10 +24,6 @@
 
 .sidebar {
   grid-area: sidebar;
-  //   margin-top: 40px;
-  @include mq(tablet) {
-    // margin-top: 0;
-  }
 }
 
 .sidebar_listItem {
@@ -44,6 +44,10 @@
   &:not(:first-child) {
     margin-top: 10px;
   }
+  @include mq(tablet) {
+    line-height: 1.33;
+    font-size: 18px;
+  }
 }
 .contentList_img {
   margin-top: 10px;
@@ -56,7 +60,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  @include mq(tablet) {
+  @include mq(desktop) {
     flex-wrap: nowrap;
   }
 }
@@ -65,20 +69,17 @@
     margin-top: 10px;
   }
 
-  @include mq(tablet) {
+  @include mq(desktop) {
     &:not(:first-child) {
       margin-top: 0;
       margin-left: 10px;
     }
   }
 }
-.contentList_imgList{
+.contentList_imgList {
   height: 400px;
 }
 
-.mainInfo {
-  grid-area: header;
-}
 .quoteContainer {
   margin-top: 80px;
   text-align: center;
@@ -110,5 +111,26 @@
     z-index: 2;
     top: 50%;
     right: -28px;
+  }
+}
+.btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: transparent;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+}
+.btn_icon {
+  fill: #fff;
+  transition: all 300ms ease-in-out;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    fill: #fbd784;
   }
 }
