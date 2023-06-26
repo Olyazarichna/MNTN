@@ -5,11 +5,6 @@
   margin: 0 auto;
   overflow: scroll;
   height: 400px;
-  @include mq(tablet) {
-    // display: flex;
-    // flex-wrap: wrap;
-    // width: 100%;
-  }
 }
 .wrapper {
   @include mq(tablet) {
