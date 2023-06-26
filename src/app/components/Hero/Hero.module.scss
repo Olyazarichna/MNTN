@@ -125,7 +125,6 @@
 }
 
 .listScroll_item {
- 
   font-size: 16px;
   font-weight: 700;
   position: relative;
@@ -163,13 +162,15 @@
   @include mq(tablet) {
     margin-top: 32px;
     visibility: visible;
-    display: flex;
   }
 }
-.icon {
-  margin-left: 20px;
-}
+
 .textScroll {
   font-weight: 700;
   font-size: 18px;
+  display: flex;
+    align-items: center;
+}
+.icon {
+  margin-left: 20px;
 }

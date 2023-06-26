@@ -1,9 +1,12 @@
-import Link from "next/link";
+"use client";
+
+// import Link from "next/link";
 import styles from "./Hero.module.scss";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const Hero = () => {
   return (
-     <section className={`${'container'} ${styles.heroSection}`}> 
+    <section className={`${"container"} ${styles.heroSection}`}>
       <div className={styles.navLink}>
         <p className={styles.navLink_text} id="contact">
           Follow us
@@ -41,39 +44,46 @@ const Hero = () => {
           Be prepared for the Mountains and beyond!
         </h1>
         <div className={styles.scrollDown}>
-          <p className={styles.textScroll}>Scroll down </p>
-          <svg
-            className={styles.icon}
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="24"
-            fill="none"
+          <Link
+            to="01"
+            smooth={true}
+            duration={500}
+            className={styles.textScroll}
           >
-            <path
-              fill="#fff"
-              d="m16 16-1.41-1.41L9 20.17V0H7v20.17l-5.58-5.59L0 16l8 8 8-8Z"
-            />
-          </svg>
+            Scroll down
+            <svg
+              className={styles.icon}
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="24"
+              fill="none"
+            >
+              <path
+                fill="#fff"
+                d="m16 16-1.41-1.41L9 20.17V0H7v20.17l-5.58-5.59L0 16l8 8 8-8Z"
+              />
+            </svg>
+          </Link>
         </div>
       </div>
       <ul className={styles.listScroll}>
         <li className={styles.listScroll_item}>
-          <Link href="/" scroll={false}>
+          <Link to="/" smooth={true} duration={500}>
             Start
           </Link>
         </li>
         <li className={styles.listScroll_item}>
-          <Link href="/#01" scroll={false}>
+          <Link to="01" smooth={true} duration={500}>
             01
           </Link>
         </li>
         <li className={styles.listScroll_item}>
-          <Link href="/#02" scroll={false}>
+          <Link to="02" smooth={true} duration={500}>
             02
           </Link>
         </li>
         <li className={styles.listScroll_item}>
-          <Link href="/#03" scroll={false}>
+          <Link to="03" smooth={true} duration={500}>
             03
           </Link>
         </li>

@@ -15,7 +15,7 @@ const NavBar=()=>{
           </li>
           <li className={styles.nav_item}>
             <Link
-              href="/"
+              href="/aboutUs"
               className={styles.nav_link}
             >
               About us

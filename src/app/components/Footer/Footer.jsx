@@ -60,7 +60,7 @@ const Footer = () => {
           <div>
             <h4 className={styles.title}>More on MNTN</h4>
             <ul className={styles.list}>
-              <li className={styles.list_tem}>
+              <li className={styles.list_item}>
                 <Link className={styles.list_link} href="/">
                   The Team
                 </Link>
