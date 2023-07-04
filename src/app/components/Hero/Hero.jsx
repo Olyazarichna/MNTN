@@ -1,6 +1,5 @@
 "use client";
 
-// import Link from "next/link";
 import styles from "./Hero.module.scss";
 import { Link, animateScroll as scroll } from "react-scroll";
 
