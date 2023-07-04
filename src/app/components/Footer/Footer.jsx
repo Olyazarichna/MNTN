@@ -45,7 +45,7 @@ const Footer = () => {
                 <Link
                   className={styles.list_link}
                   onClick={openModal}
-                  href="/#contact"
+                  href="#contact"
                 >
                   Contact Us
                 </Link>
