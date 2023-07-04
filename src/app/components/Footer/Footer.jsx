@@ -27,7 +27,7 @@ const Footer = () => {
             <h4 className={styles.title}>More on The Blog</h4>
             <ul className={styles.list}>
               <li className={styles.list_item}>
-                <Link className={styles.list_link} href="/">
+                <Link className={styles.list_link} href="aboutUs">
                   About MNTN
                 </Link>
               </li>

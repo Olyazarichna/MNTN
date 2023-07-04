@@ -8,15 +8,19 @@ const Hero = () => {
         <div className={styles.img_wrapper_2}></div>
         <div className={styles.img_wrapper_3}></div>
       </div>
-
-      <p className={`${"container"} ${styles.text}`}>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo
-        repellat vitae quasi doloribus, a exercitationem! Nesciunt officia,
-        veritatis corrupti unde magnam consequuntur quo quasi! Iure, quibusdam
-        eius beatae vel hic reiciendis eligendi libero omnis est mollitia,
-        distinctio obcaecati, debitis consectetur! Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Magni, minus!
-      </p>
+      <div className={"container"}>
+        <h1 className={styles.heading}>
+          NEVER WONDER WHERE YOU&rsquo;LL HIKE NEXT
+        </h1>
+        <p className={styles.text}>
+          Whenever someone is burnt out, my advice is always: plan a trip so you
+          have something to look forward to!
+        This website contains hundreds of
+          hyper-detailed hiking trail guides and how-to articles written by an
+          experienced local hiker, so you can enjoy accurate, reliable trail
+          info, and hike safer and better.
+        </p>
+      </div>
     </section>
   );
 };
