@@ -42,13 +42,13 @@ const Footer = () => {
                 </a>
               </li>
               <li className={styles.list_item}>
-                <Link
+                <button
                   className={styles.list_link}
                   onClick={openModal}
                   href="#contact"
                 >
                   Contact Us
-                </Link>
+                </button>
               </li>
               <li className={styles.list_item}>
                 <Link className={styles.list_link} href="/">
