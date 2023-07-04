@@ -1,15 +1,20 @@
 "use client";
 
 import styles from "./EquipmentArticle.module.scss";
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
-import  {
-  hikingMan, forest, tents, bag, equipment, rain, mountains
-} from './gallery';
+import {
+  hikingMan,
+  forest,
+  tents,
+  bag,
+  equipment,
+  rain,
+  mountains,
+} from "./gallery";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 const EquipmentArticle = () => {
-
   const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {
@@ -21,9 +26,9 @@ const EquipmentArticle = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -331,28 +336,19 @@ const EquipmentArticle = () => {
         </p>
         <span className={styles.quoteAuthor}>Werner Herzog</span>
       </div>
-      {showButton &&(
-        <button onClick={scroll.scrollToTop} className={styles.btn}><svg  className={styles.btn_icon} xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 1024 1024"><path d="M104.7 685.2a64 64 0 0 0 90.5 0L512 368.4l316.8 316.8a64 64 0 0 0 90.5-90.4l-362-362.1a64 64 0 0 0-90.5 0l-362.1 362a64 64 0 0 0 0 90.5z"/></svg></button>
+      {showButton && (
+        <button onClick={scroll.scrollToTop} className={styles.btn}>
+          <svg
+            className={styles.btn_icon}
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            viewBox="0 0 1024 1024"
+          >
+            <path d="M104.7 685.2a64 64 0 0 0 90.5 0L512 368.4l316.8 316.8a64 64 0 0 0 90.5-90.4l-362-362.1a64 64 0 0 0-90.5 0l-362.1 362a64 64 0 0 0 0 90.5z" />
+          </svg>
+        </button>
       )}
-      
-
-      {/* Extra Hiking Essentials
-Lip balm – to prevent your lips from chapping.
-Spare batteries – in case your headlamp runs out of juice.
-Water filtration system – this will be useful if you run out of water supplies.
-Emergency shelter – this can be in the form of a tent, a bivy, a storm shelter or even just an emergency reflective blanket.
-Sleeping bag – in case you get caught in low-light and need the camp the night out.
-Whistle – this can be life-saving if you get lost and need to get attention.
-Insect repellent – very useful for when the midges come out to play.
-Binoculars – you may be able to see an escape route that you can’t see with your naked eye.
-Trekking poles – these can be used for stability while walking while also making great splints should there be any injuries.
-Rubbish bag – remember – Leave No Trace!
-Rain gear – you can never be too prepared for the rain.
-Piece of cord/rope – you will undoubtedly find a use for this, whether it’s a new shoelace or tying your whole shoe back together.
-Blister kit – this will be your best friend when those little blisters start to form.
-Toilet paper – you never know when nature will call on the trail!
-Itinerary of your hike – leave one in your car at the trail head and one with a friend so people know where you are.
-Emergency contact info – have a piece of paper on you with this information, and also any medications you may need to take. */}
     </section>
   );
 };

@@ -25,7 +25,7 @@
 }
 .img_wrapper_2 {
   @extend .img_wrapper_1;
-  background-image: url("../../../images/blog/beauty.jpg");
+  background-image: url("../../../images/blog/climbing/climbing.jpg");
   display: none;
 
   @include mq(tablet) {
@@ -40,11 +40,11 @@
     display: block;
   }
 }
-.heading{
-    margin: 20px auto 0;
-    @include mq(tablet) {
-        margin: 40px auto 0;
-      }
+.heading {
+  margin: 20px auto 0;
+  @include mq(tablet) {
+    margin: 40px auto 0;
+  }
 }
 .text {
   font-size: 18px;
